@@ -144,7 +144,7 @@ div.price {
 .header-content {
     color: #fffffff0;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -160,8 +160,10 @@ div.price {
    
 }
 .aboutme-content > div > p {
+  margin: 20px 100px 20px 100px;
+    background-color: #00000017;
     text-align: center;
-    font-size: medium;
+    font-size: larger;
 
 }
 
@@ -192,6 +194,7 @@ div.price {
 }
 
 .aboutme-content {
+    background-color: #00000024;
     color: #F1F1F1;
     width: 100%;
     max-width: 1000px;
@@ -204,6 +207,7 @@ div.price {
 
 
 .footer-container {
+    position: inherit;
     background: #1b1b27;
     display: flex;
     justify-content: center;
@@ -360,16 +364,19 @@ ul {
 }
 
 #info {
+  margin: -20px 34px -15px 34px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #ffffff0f;
 }
 
 li#info > p {
-  gap: 5px;
-  margin: 10px;
-
+  background-color: #ffffff30;
+    display: flex;
+    text-align: center;
+    margin: 10px;
 }
   
 
@@ -397,21 +404,10 @@ footer {
 =============================================================================
 */
 
-@media only screen and (min-width: 320px) {
-
-
-
-}
-
-@media only screen and (min-width: 480px) {
-
-
-
-}
 
 @media only screen and (min-width: 768px) {
 
-	
+
 }  
 
 
