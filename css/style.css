@@ -13,9 +13,8 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 */
 
 html {
-    height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
+  
   }
   
   #stars {
@@ -110,31 +109,23 @@ body {
     padding: 0;
     margin: 0;
 }
-/*
-body {
-    background: #020520;
-    perspective: 500px;
-    overflow-x: hidden;
-  }
-  
-  figure {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 25vh;
-  }
-  
-  figure img {
-    transform: scale(0.6) rotate(-12.5deg);
-  }
-  
+
 
 
 /* Layout
 ========================================================================== */
+
+.info {
+}
+
+div.price {
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  border: 0 solid #e5e7eb;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 
 .header-container {
@@ -169,8 +160,8 @@ body {
    
 }
 .aboutme-content > div > p {
-    margin: nome;
-  position: fixed;
+    text-align: center;
+    font-size: medium;
 
 }
 
@@ -192,11 +183,12 @@ body {
 }
 
 .aboutme-container {
-    background: #29326a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 48px 0;
+  background: #29326a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+  flex-direction: column;
 }
 
 .aboutme-content {
@@ -360,19 +352,26 @@ section p {
 /* Lists and Navigation
 ========================================================================== */
 
-.main-nav {
-    display: none;
+ul {   
+  display: flex; 
+  list-style: none;
+  margin: 20px;
+  padding: 0;
 }
 
-.mobile-nav span a {
-    font-size: 48px;
-    padding: 8px;
-    color: #F1F1F1;
+#info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.mobile-nav span a:hover {
-    color: #74b44a;
+li#info > p {
+  gap: 5px;
+  margin: 10px;
+
 }
+  
 
 footer {
     text-align: center;
@@ -381,10 +380,6 @@ footer {
 /* Images and Videos
 ========================================================================== */
 
-.aboutme-photo {
-    width: 100%;
-    max-width: 320px;
-}
 
 
 /* Forms
