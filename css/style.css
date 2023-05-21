@@ -377,6 +377,7 @@ li#info > p {
     display: flex;
     text-align: center;
     margin: 10px;
+    font-size: large;
 }
   
 
