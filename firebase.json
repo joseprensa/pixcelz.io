@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "pixcelz",
     "public": "out",
     "ignore": [
       "firebase.json",

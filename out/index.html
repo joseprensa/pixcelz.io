@@ -36,7 +36,7 @@
             </div>
 
             <div>
-            <a href="https://opensea.io/collection/pixcelz"><img src="img/opensea" height="100px" width="100px" alt="opensea"></a>
+            <a href="https://opensea.io/collection/pixcelz"><img src="img/opensea.png" height="100px" width="100px" alt="opensea"></a>
             </div>
 
             <div>
@@ -44,7 +44,7 @@
             </div>
 
             <div>
-            <a href="#"><img src="img/discord.webp" height="100px" width="100px" alt="discord">  <p>coming soon</p></a>
+            <a href="#"><img src="img/discord.webp"  height="100px" width="100px" alt="discord">  <p id="soon">coming soon</p></a>
           </div>
            
         </header>
@@ -516,4 +516,27 @@
 
 
 </body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBc8Afn_MUg0npZ3GgLw42j7GuNxyV6y5U",
+    authDomain: "pixcelz.firebaseapp.com",
+    projectId: "pixcelz",
+    storageBucket: "pixcelz.appspot.com",
+    messagingSenderId: "552216891487",
+    appId: "1:552216891487:web:ba5191cbe94699bea20bea",
+    measurementId: "G-87RJXD49DZ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </html>

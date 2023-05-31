@@ -115,6 +115,10 @@ body {
 /* Layout
 ========================================================================== */
 
+#soon {
+  margin: -12px 0 0 0;
+}
+
 .info {
 }
 
@@ -129,16 +133,16 @@ div.price {
 
 
 .header-container {
-    background: #1b1b27;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0; 
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  background: #1b1b2700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -15px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header-content {
@@ -194,6 +198,7 @@ div.price {
 }
 
 .aboutme-content {
+  font-size: xx-large;
     background-color: #00000024;
     color: #F1F1F1;
     width: 100%;
@@ -202,7 +207,7 @@ div.price {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    
 }
 
 
@@ -406,7 +411,34 @@ footer {
 */
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 844px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .aboutme-content > div > p {
+    margin: -24px 50px 20px 50px;
+    font-size: xx-large;
+  }
+
+  ul {
+    flex-direction: column;
+    margin: -27px 20px 20px 20px;
+
+  }
+
+  #info {
+    margin: 13px 34px -15px 34px;
+  }
+
+  .header-container {
+    margin: -17px 0 0 0;
+  }
+
+  .header-content {
+    margin: 0 0 12px 0;
+  }
 
 
 }  
